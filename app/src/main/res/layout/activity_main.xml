@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d35400"
+    tools:context="com.example.patrick.uhacproject.MainActivity">
+
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:background="@android:drawable/bottom_bar"
+        android:id="@+id/imageView5"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:drawable/bottom_bar">
+
+        <TextView
+            android:text="0"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_c"
+            android:layout_alignBottom="@+id/image_C" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@android:drawable/bottom_bar"
+            android:id="@+id/image_C"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/tv_c" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:drawable/bottom_bar">
+
+        <TextView
+            android:text="0"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_s"
+            android:layout_alignBottom="@+id/image_S" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/bottom_bar"
+            android:id="@+id/image_S"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/tv_s" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:drawable/bottom_bar">
+
+        <TextView
+            android:text="0"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_f"
+            android:layout_alignBottom="@+id/image_F" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/bottom_bar"
+            android:id="@+id/image_F"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/tv_f"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Total Price:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalprice"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@+id/btn_order"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_above="@+id/btn_order"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="@android:drawable/bottom_bar"
+            />
+
+        <ImageButton
+            android:src="@android:drawable/bottom_bar"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btn_order"
+            android:textSize="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>
