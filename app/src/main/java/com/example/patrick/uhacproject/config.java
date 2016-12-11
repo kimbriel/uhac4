@@ -13,7 +13,7 @@ public class config {
 
     public static int totalprice=0;
 
-    public static String url="http://192.168.1.105/uhac/operations.php";
+    public static String url="http://192.168.1.103  /uhac/operations.php";
 
     public static int balance=0;
 

@@ -4,17 +4,8 @@
     android:id="@+id/activity_order_overview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d35400"
     tools:context="com.example.patrick.uhacproject.OrderOverview">
-
-    <TextView
-        android:text="Total Amount:"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView8"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="5"
@@ -23,7 +14,7 @@
         android:layout_height="200dp"
         android:gravity="center"
         android:id="@+id/textView6"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="153dp"
@@ -33,7 +24,7 @@
     <TextView
         android:text="TRANSACTION \n NUMBER"
         android:textSize="40dp"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,13 +48,34 @@
     <TextView
         android:text="Order List:"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView10"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/textView9"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Total Amount:"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
 
 
 </RelativeLayout>

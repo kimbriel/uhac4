@@ -11,18 +11,18 @@
 
 
     <ImageView
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/imageView5"
-        android:scaleType="fitXY"
-        android:layout_gravity="center"
-        />
+       android:layout_width="match_parent"
+       android:layout_height="175dp"
+       android:background="@drawable/logo_main"
+       android:scaleType="fitXY"
+
+       android:layout_gravity="center"
+        android:id="@+id/imageView2" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:background="@android:drawable/bottom_bar">
+        android:background="@drawable/bg_square">
 
         <TextView
             android:text="0"
@@ -37,9 +37,10 @@
             android:layout_alignBottom="@+id/image_C" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-           android:src="@android:drawable/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chicken_little"
+            android:scaleType="fitXY"
             android:id="@+id/image_C"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
@@ -48,7 +49,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:background="@android:drawable/bottom_bar">
+        android:background="@drawable/bg_square">
 
         <TextView
             android:text="0"
@@ -65,7 +66,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:drawable/bottom_bar"
+            android:src="@drawable/spaghetti_little"
             android:id="@+id/image_S"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
@@ -75,7 +76,17 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:background="@android:drawable/bottom_bar">
+        android:background="@drawable/bg_square">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/french_fries_little"
+            android:id="@+id/image_F"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/tv_f"
+            />
 
         <TextView
             android:text="0"
@@ -84,20 +95,9 @@
             android:textColor="#000000"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:id="@+id/tv_f"
-            android:layout_alignBottom="@+id/image_F" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/bottom_bar"
-            android:id="@+id/image_F"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/tv_f"
-            />
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 
@@ -106,7 +106,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="Total Price:"
+            android:text="Total Price: 0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/totalprice"
@@ -118,16 +118,16 @@
             android:layout_above="@+id/btn_order"
             android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:background="@android:drawable/bottom_bar"
+            android:background="#fff"
             />
 
         <ImageButton
-            android:src="@android:drawable/bottom_bar"
             android:scaleType="fitXY"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:id="@+id/btn_order"
             android:textSize="50dp"
+            android:src="@drawable/verify_order"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true" />

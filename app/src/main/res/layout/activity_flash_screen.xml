@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.patrick.uhacproject.FlashScreen"
-    android:background="@android:drawable/bottom_bar">
+    android:background="@drawable/flash">
 
 
 </RelativeLayout>

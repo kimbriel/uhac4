@@ -4,6 +4,7 @@
     android:id="@+id/activity_transaction_bank_payment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d35400"
     tools:context="com.example.patrick.uhacproject.TransactionBankPayment">
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="99dp"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:id="@+id/textView"
         android:layout_marginBottom="20dp"/>
 
@@ -23,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
@@ -34,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:id="@+id/textView4"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true" />

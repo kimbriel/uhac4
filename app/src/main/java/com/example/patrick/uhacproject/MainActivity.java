@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void insertOrder(){
-        String query=config.url + "?operation=insert_order&session=" + config.session + "&chicken=" + config.chickenQuantity + "&spag=" + config.spagQuantity + "&fries=" + config.friesQuantity + "&total=" + config.totalprice + "&status=unpaid";
+        String query=config.url + "?operation=insert_order&session=" + config.session + "&chicken=" + config.chickenQuantity + "&spag=" + config.spagQuantity + "&fries=" + config.friesQuantity + "&total=" + config.totalprice + "&status=unpaid&food_status=uncook";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, query, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
 
         config.totalprice=chicken+spag+fries;
 
-        totalPrice.setText(String.valueOf(config.totalprice));
+        totalPrice.setText("Total Price: "+String.valueOf(config.totalprice));
 
     }
 

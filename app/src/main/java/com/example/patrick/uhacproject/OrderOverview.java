@@ -1,5 +1,6 @@
 package com.example.patrick.uhacproject;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import org.json.JSONObject;
 
 public class OrderOverview extends AppCompatActivity {
 
-    TextView tableNumber,transactionNumber,orderList,totalAmount;
+    TextView tableNumber,transactionNumber,orderList,totalAmount,foodStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class OrderOverview extends AppCompatActivity {
         transactionNumber=(TextView)findViewById(R.id.textView9);
         orderList=(TextView)findViewById(R.id.textView10);
         totalAmount=(TextView)findViewById(R.id.textView8);
+        foodStatus=(TextView)findViewById(R.id.textView3);
+
 
         runOnUiThread(new Runnable() {
             @Override
@@ -66,6 +69,14 @@ public class OrderOverview extends AppCompatActivity {
 
                     orderList.setText(list);
                     totalAmount.setText("Total amount of order: "+String.valueOf(config.totalprice));
+                    if(jsonObject.getString("food_status").equals("cook")){
+                        foodStatus.setText("Your food is ready.");
+                        foodStatus.setTextColor(Color.GREEN);
+                    }
+                    else{
+                        foodStatus.setText("");
+                    }
+                    getOrder();
 
                 } catch (JSONException e) {
                     e.printStackTrace();
